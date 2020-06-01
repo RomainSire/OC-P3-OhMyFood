@@ -1,0 +1,19 @@
+{
+  "name": "oc-p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainSire/OC-P3-OhMyFood.git"
+  },
+  "author": "Romain Siré",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainSire/OC-P3-OhMyFood/issues"
+  },
+  "homepage": "https://github.com/RomainSire/OC-P3-OhMyFood#readme"
+}
