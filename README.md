@@ -16,6 +16,9 @@ Intégration de la maquette et de différentes pages en utilisant des animations
 - SASS
 - Animations CSS
 
+## GitHub Pages
+Le site web est accessible à l'adresse : https://romainsire.github.io/OC-P3-OhMyFood/
+
 ## Livrables
 - Un lien vers votre repository Github
 - Un lien vers la page web du site (GitHub Pages)
