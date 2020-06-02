@@ -337,17 +337,6 @@ template {
   display: none;
 }
 
-/*
-Goolge Fonts:
-font-family: 'Dancing Script', cursive;
-font-family: 'Devonshire', cursive;
-font-family: 'DM Serif Text', serif;
-font-family: 'Itim', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Kurale', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Nanum Pen Script', cursive;
-*/
 * {
   box-sizing: border-box;
 }
@@ -382,19 +371,31 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
+  font-weight: 600;
+  font-size: 1.8rem;
   color: #fdcb46;
   background: #579c87;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1.8rem;
 }
-.footer ul {
+.footer__list {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-.footer li {
+.footer__list li {
   padding: 20px 30px;
 }
+
+/*
+Goolge Fonts:
+font-family: 'Dancing Script', cursive;
+font-family: 'Devonshire', cursive;
+font-family: 'DM Serif Text', serif;
+font-family: 'Itim', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Kurale', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+*/
 
 /*# sourceMappingURL=style.css.map */
