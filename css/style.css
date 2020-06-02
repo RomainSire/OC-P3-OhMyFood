@@ -394,9 +394,6 @@ ul {
   width: 350px;
   height: 500px;
   margin: 0 10px 50px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   box-shadow: 0 0 10px #aaa8;
   text-align: center;
 }
@@ -404,6 +401,12 @@ ul {
   .menu-list__card {
     margin: 0 50px 50px 50px;
   }
+}
+.menu-list__card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .menu-list__card h2 {
   font-size: 1.9rem;
