@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/**
+ * Gradient de couleur sur le TEXTE
+ * $direction : direction du gradient (par défaut : de haut vers le bas)
+ * $color1 : 1ere couleur du gradient
+ * $color2 : 2eme couleur du gradient
+ */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -352,6 +359,17 @@ ul {
   padding: 0;
 }
 
+.btn {
+  padding: 0.5em 2.2em;
+  font-weight: 600;
+  font-size: 2rem;
+  border-radius: 0.5em;
+  cursor: pointer;
+  color: #fdcb46;
+  background: #579c87;
+  font-family: "Montserrat", sans-serif;
+}
+
 .header {
   color: #fdcb46;
   background: #579c87;
@@ -366,11 +384,109 @@ ul {
   letter-spacing: -0.1em;
 }
 
+.menu-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.menu-list__card {
+  width: 350px;
+  height: 500px;
+  margin: 0 10px 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px #aaa8;
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .menu-list__card {
+    margin: 0 50px 50px 50px;
+  }
+}
+.menu-list__card h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+.menu-list__card p {
+  font-size: 2.8rem;
+  margin: 0;
+}
+.menu-list__card--note {
+  background: #fcdfdb;
+  color: #3c1218;
+}
+.menu-list__card--note .fas {
+  font-size: 1.5em;
+  background: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-list__card--note h2 {
+  font-family: "Devonshire", cursive;
+}
+.menu-list__card--note p {
+  font-family: "Itim", cursive;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.menu-list__card--chic {
+  background: #fff5fe;
+  color: #c77412;
+}
+.menu-list__card--chic h2 {
+  font-family: "Kurale", serif;
+  background: linear-gradient(0.25turn, #c77412, #905bfd);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-list__card--chic p {
+  font-family: "DM Serif Text", serif;
+}
+.menu-list__card--delice {
+  background: #f9f9f9;
+  color: #0887fb;
+}
+.menu-list__card--delice h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.2em;
+  background: linear-gradient(0.25turn, #0431df, #0887fb);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-list__card--delice p {
+  font-family: "Nanum Pen Script", cursive;
+  font-style: italic;
+}
+.menu-list__card--palette {
+  background: #fdfffd;
+  color: #72bf56;
+}
+.menu-list__card--palette h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.2em;
+  background: linear-gradient(0.25turn, #3d9339, #bfff7e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-list__card--palette p {
+  font-family: "Nanum Pen Script", cursive;
+  font-style: italic;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 0.5em 0;
   font-weight: 600;
   font-size: 1.8rem;
   color: #fdcb46;
@@ -378,12 +494,17 @@ ul {
   font-family: "Montserrat", sans-serif;
 }
 .footer__list {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .footer__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
 }
 .footer__list li {
-  padding: 20px 30px;
+  padding: 0.3em 1.2em;
 }
 
 /*

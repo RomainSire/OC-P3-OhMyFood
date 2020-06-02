@@ -1,2 +1,30 @@
+// Couleurs
 $color-bg: #579c87;
 $color-txt: #fdcb46;
+
+$color-note-bg: #fcdfdb;
+$color-note-grad1: #f04a5e;
+$color-note-grad2: #f78f6a;
+$color-note-txt: #3c1218;
+
+$color-chic-bg: #fff5fe;
+$color-chic-grad1: #c77412;
+$color-chic-grad2: #905bfd;
+$color-chic-txt: $color-chic-grad1;
+
+$color-delice-bg: #f9f9f9;
+$color-delice-grad1: #0431df;
+$color-delice-grad2: #0887fb;
+$color-delice-txt: $color-delice-grad2;
+
+$color-palette-bg: #fdfffd;
+$color-palette-grad1: #3d9339;
+$color-palette-grad2: #bfff7e;
+$color-palette-txt: #72bf56;
+
+
+
+// Breakpoints pour le responsive
+$breakpoints: (
+    desktop: 700px
+);

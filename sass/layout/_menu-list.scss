@@ -1,0 +1,89 @@
+.menu-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+
+    &__card {
+        width: 350px;
+        height: 500px;
+        margin: 0 10px 50px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 0 10px #aaa8;
+        text-align: center;
+        @include desktop-only {
+            margin: 0 50px 50px 50px;;
+        }
+        h2 {
+            font-size: 1.9rem;
+            font-weight: 400;
+        }
+        p {
+            font-size: 2.8rem;
+            margin: 0;
+        }
+
+        // Menu de "La note enchantée"
+        &--note {
+            background: $color-note-bg;
+            color: $color-note-txt;
+            .fas {
+                font-size: 1.5em;
+                @include textGradient(0.25turn, $color-note-grad1, $color-note-grad2);
+            }
+            h2 {
+                font-family: 'Devonshire', cursive;
+            }
+            p {
+                font-family: 'Itim', cursive;
+                text-transform: uppercase;
+                font-style: italic;
+            }
+        }
+
+        // Menu de "Le chic à la Française"
+        &--chic {
+            background: $color-chic-bg;
+            color: $color-chic-txt;
+            h2 {
+                font-family: 'Kurale', serif;
+                @include textGradient(0.25turn, $color-chic-grad1, $color-chic-grad2);
+            }
+            p {
+                font-family: 'DM Serif Text', serif;
+            }
+        }
+
+        // Menu de "Le délice des papilles"
+        &--delice {
+            background: $color-delice-bg;
+            color: $color-delice-txt;
+            h2 {
+                font-family: 'Dancing Script', cursive;
+                font-size: 2.2em;
+                @include textGradient(0.25turn, $color-delice-grad1, $color-delice-grad2);
+            }
+            p {
+                font-family: 'Nanum Pen Script', cursive;
+                font-style: italic;
+            }
+        }
+
+        // Menu de "La palette du goût"
+        &--palette {
+            background: $color-palette-bg;
+            color: $color-palette-txt;
+            h2 {
+                font-family: 'Kaushan Script', cursive;
+                font-size: 2.2em;
+                @include textGradient(0.25turn, $color-palette-grad1, $color-palette-grad2);
+            }
+            p {
+                font-family: 'Nanum Pen Script', cursive;
+                font-style: italic;
+            }
+        }
+    }
+}
