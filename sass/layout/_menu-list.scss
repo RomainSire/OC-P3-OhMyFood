@@ -51,7 +51,8 @@
             background: $color-chic-bg;
             color: $color-chic-txt;
             h2 {
-                font-family: 'Kurale', serif;
+                font-family: 'Croissant One', cursive;
+                font-size: 1.4em;
                 @include textGradient(0.25turn, $color-chic-grad1, $color-chic-grad2);
             }
             p {

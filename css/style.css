@@ -439,7 +439,8 @@ ul {
   color: #c77412;
 }
 .menu-list__card--chic h2 {
-  font-family: "Kurale", serif;
+  font-family: "Croissant One", cursive;
+  font-size: 1.4em;
   background: linear-gradient(0.25turn, #c77412, #905bfd);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -509,17 +510,5 @@ ul {
 .footer__list li {
   padding: 0.3em 1.2em;
 }
-
-/*
-Goolge Fonts:
-font-family: 'Dancing Script', cursive;
-font-family: 'Devonshire', cursive;
-font-family: 'DM Serif Text', serif;
-font-family: 'Itim', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Kurale', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Nanum Pen Script', cursive;
-*/
 
 /*# sourceMappingURL=style.css.map */
