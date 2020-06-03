@@ -359,6 +359,10 @@ ul {
   padding: 0;
 }
 
+main {
+  margin-bottom: 10rem;
+}
+
 .btn {
   padding: 0.5em 2.2em;
   font-weight: 600;
@@ -482,7 +486,6 @@ ul {
 .coming-soon {
   display: flex;
   justify-content: center;
-  margin-bottom: 10rem;
 }
 
 .footer {
@@ -509,6 +512,13 @@ ul {
 }
 .footer__list li {
   padding: 0.3em 1.2em;
+}
+
+.legal {
+  padding: 0 5%;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: #555;
 }
 
 /*# sourceMappingURL=style.css.map */
