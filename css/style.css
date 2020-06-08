@@ -639,8 +639,11 @@ main {
   font-weight: 400;
 }
 .menu__carte h4 {
+  margin: 0;
+}
+.menu__carte .course {
   position: relative;
-  margin: 70px 0 0 0;
+  margin: 75px 0 0 0;
   text-align: center;
   font-size: 1.7rem;
   display: flex;
@@ -648,17 +651,23 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.menu__carte h4:first-of-type {
-  margin-top: 40px;
+.menu__carte .course:first-of-type {
+  margin-top: 50px;
 }
-.menu__carte h4::before, .menu__carte h4::after {
-  content: "";
+.menu__carte .course__separator {
   display: inline-block;
   width: 30%;
   height: 1em;
 }
-.menu__carte h4::after {
+.menu__carte .course__separator--after {
   transform: rotate(180deg);
+}
+.menu__carte .course .underline {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid black;
 }
 .menu__carte table {
   width: 100%;
@@ -670,6 +679,8 @@ main {
 .menu__carte td:nth-child(2) {
   text-align: right;
   padding-left: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 .menu__carte--note {
   background: #fcdfdb;
@@ -687,7 +698,7 @@ main {
   font-family: "Devonshire", cursive;
   font-style: normal;
 }
-.menu__carte--note h4::before, .menu__carte--note h4::after {
+.menu__carte--note .course__separator {
   background: center/contain no-repeat url(../img/sep-note.svg);
 }
 .menu__carte--note .title-bottom {
