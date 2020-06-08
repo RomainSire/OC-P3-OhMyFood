@@ -1,0 +1,97 @@
+.menu {
+    max-width: 800px;
+    margin: auto;
+
+    // Nom du restaurant HORS de la carte
+    h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 2.7rem;
+        color: $color-p;
+        margin: 0;
+        padding: 0.8em 0;
+    }
+    &__carte {
+        box-shadow: 0 0 10px #bbba;
+        padding: 30px 10px;
+        @include desktop-only {
+            padding: 60px 80px;
+        }
+        // Nom du restaurant DANS la carte
+        h3 {
+            margin: 0;
+            text-align: center;
+            font-size: 3.4rem;
+            font-weight: 400;
+        }
+        // Titre : entrée/plat/dessert
+        h4 { 
+            position: relative;
+            margin: 70px 0 0 0;
+            text-align: center;
+            font-size: 1.7rem;
+            &:first-of-type {
+                margin-top: 40px;
+            }
+            // séparateurs SVG avant et après le titre :
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            &::before,
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 30%;
+                height: 1em;
+            }
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+
+        table {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+        td {
+            padding-top: 1em;
+            &:nth-child(2) {
+                text-align: right;
+                padding-left: 20px;
+            }
+        }
+        
+        &--note {
+            background: $color-note-bg;
+            color: $color-note-txt;
+            font-family: 'Itim', cursive;
+            font-style: italic;
+            .fas {
+                font-size: 1.5em;
+                @include textGradient(0.25turn, $color-note-grad1, $color-note-grad2);
+            }
+            h3 {
+                font-family: 'Devonshire', cursive;
+                font-style: normal;
+            }
+            h4 {
+                &::before,
+                &::after {
+                    background: center / contain no-repeat url(../img/sep-note.svg);
+            }
+            }
+            .title-bottom {
+                margin-top: 50px;
+                text-align: center;
+                font-family: 'Devonshire', cursive;
+                font-style: normal;
+                font-size: 2.5rem;
+                .fas {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

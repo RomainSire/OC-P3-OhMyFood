@@ -610,11 +610,102 @@ main {
   animation: shake 500ms infinite;
 }
 
+.menu {
+  max-width: 800px;
+  margin: auto;
+}
+.menu h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2.7rem;
+  color: #333;
+  margin: 0;
+  padding: 0.8em 0;
+}
+.menu__carte {
+  box-shadow: 0 0 10px #bbba;
+  padding: 30px 10px;
+}
+@media screen and (min-width: 700px) {
+  .menu__carte {
+    padding: 60px 80px;
+  }
+}
+.menu__carte h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 400;
+}
+.menu__carte h4 {
+  position: relative;
+  margin: 70px 0 0 0;
+  text-align: center;
+  font-size: 1.7rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__carte h4:first-of-type {
+  margin-top: 40px;
+}
+.menu__carte h4::before, .menu__carte h4::after {
+  content: "";
+  display: inline-block;
+  width: 30%;
+  height: 1em;
+}
+.menu__carte h4::after {
+  transform: rotate(180deg);
+}
+.menu__carte table {
+  width: 100%;
+  font-size: 1.2rem;
+}
+.menu__carte td {
+  padding-top: 1em;
+}
+.menu__carte td:nth-child(2) {
+  text-align: right;
+  padding-left: 20px;
+}
+.menu__carte--note {
+  background: #fcdfdb;
+  color: #3c1218;
+  font-family: "Itim", cursive;
+  font-style: italic;
+}
+.menu__carte--note .fas {
+  font-size: 1.5em;
+  background: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__carte--note h3 {
+  font-family: "Devonshire", cursive;
+  font-style: normal;
+}
+.menu__carte--note h4::before, .menu__carte--note h4::after {
+  background: center/contain no-repeat url(../img/sep-note.svg);
+}
+.menu__carte--note .title-bottom {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Devonshire", cursive;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+.menu__carte--note .title-bottom .fas {
+  font-size: 1em;
+}
+
 .legal {
   padding: 0 5%;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
-  color: #555;
+  color: #333;
 }
 
 /*# sourceMappingURL=style.css.map */
