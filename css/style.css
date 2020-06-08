@@ -360,7 +360,7 @@ ul {
 }
 
 main {
-  margin-bottom: 10rem;
+  margin: 10rem 5%;
 }
 
 .btn {
@@ -375,6 +375,10 @@ main {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   color: #fdcb46;
   background: #579c87;
   font-family: "Montserrat", sans-serif;
