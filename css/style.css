@@ -40,6 +40,29 @@
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.2, 0.8) translateY(0);
+  }
+  30% {
+    transform: scale(0.8, 1.2) translateY(-0.5em);
+  }
+  50% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-0.03em);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -398,17 +421,6 @@ main {
   margin: 11rem 3% 10rem 3%;
 }
 
-.btn {
-  padding: 0.5em 2.2em;
-  font-weight: 600;
-  font-size: 2rem;
-  border-radius: 0.5em;
-  cursor: pointer;
-  color: #fdcb46;
-  background: #579c87;
-  font-family: "Montserrat", sans-serif;
-}
-
 .header {
   position: fixed;
   z-index: 10;
@@ -539,6 +551,34 @@ main {
   display: flex;
   justify-content: center;
 }
+.coming-soon__msg {
+  padding: 0.5em 2.2em;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 0.5em;
+  color: #fdcb46;
+  background: #579c87;
+  font-family: "Montserrat", sans-serif;
+}
+.coming-soon__msg .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fdcb46;
+  border-radius: 50%;
+  animation: bounce 2000ms cubic-bezier(0.28, 0.84, 0.42, 1) infinite;
+  transform-origin: bottom;
+}
+.coming-soon__msg .dot--1 {
+  animation-delay: 150ms;
+}
+.coming-soon__msg .dot--2 {
+  animation-delay: 300ms;
+}
+.coming-soon__msg .dot--3 {
+  animation-delay: 450ms;
+}
 
 .footer {
   position: fixed;
@@ -567,7 +607,7 @@ main {
   padding: 0.3em 1.2em;
 }
 .footer__list li:hover {
-  animation: shake 0.5s infinite;
+  animation: shake 500ms infinite;
 }
 
 .legal {
