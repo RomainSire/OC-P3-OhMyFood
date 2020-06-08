@@ -376,6 +376,7 @@ main {
 
 .header {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   right: 0;
@@ -404,6 +405,9 @@ main {
   margin: 0 10px 50px 10px;
   box-shadow: 0 0 10px #bbba;
   text-align: center;
+  transition: opacity 400ms ease-in-out;
+  overflow: hidden;
+  z-index: 1;
 }
 @media screen and (min-width: 700px) {
   .menu-list__card {
@@ -423,6 +427,15 @@ main {
 .menu-list__card p {
   font-size: 2.8rem;
   margin: 0;
+}
+.menu-list__card .zoom {
+  transition: transform 400ms ease-in-out;
+}
+.menu-list__card:hover .zoom {
+  transform: scale(1.15);
+}
+.menu-list__card:hover {
+  opacity: 0.5;
 }
 .menu-list__card--note {
   background: #fcdfdb;
@@ -494,6 +507,7 @@ main {
 
 .footer {
   position: fixed;
+  z-index: 10;
   bottom: 0;
   left: 0;
   right: 0;
