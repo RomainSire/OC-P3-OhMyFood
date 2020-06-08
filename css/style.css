@@ -360,7 +360,7 @@ ul {
 }
 
 main {
-  margin: 10rem 5%;
+  margin: 11rem 3% 10rem 3%;
 }
 
 .btn {
@@ -400,14 +400,14 @@ main {
 }
 .menu-list__card {
   width: 350px;
-  height: 500px;
+  height: 510px;
   margin: 0 10px 50px 10px;
-  box-shadow: 0 0 10px #aaa8;
+  box-shadow: 0 0 10px #bbba;
   text-align: center;
 }
 @media screen and (min-width: 700px) {
   .menu-list__card {
-    margin: 0 50px 50px 50px;
+    margin: 0 20px 50px 20px;
   }
 }
 .menu-list__card a {
