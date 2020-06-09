@@ -26,9 +26,6 @@
             font-weight: 400;
         }
         // Titre : entrée/plat/dessert
-        h4 {
-            margin: 0;
-        }
         .course { 
             position: relative;
             margin: 75px 0 0 0;
@@ -51,12 +48,26 @@
                 }
             }
             // soulignement animé du h4 au hover :
-            .underline {
-                position: absolute;
-                bottom: -10px;
-                right: 0;
-                left: 0;
-                border-bottom: 2px solid black;
+            h4 {
+                margin: 0;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -0.2em;
+                    right: -0.5em;
+                    left: -0.5em;
+                    height: 2px;
+                    border-radius: 2px;
+                    opacity: 0;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: opacity 400ms, transform 600ms;
+                }
+            }
+            &:hover > h4::after {
+                opacity: 1;
+                transform: scaleX(1);
             }
         }
 
@@ -90,7 +101,11 @@
             .course {
                 &__separator {
                     background: center / contain no-repeat url(../img/sep-note.svg);
-            }
+                }
+                h4::after {
+                    background: $color-note-grad2;
+                    box-shadow: 0 0 5px $color-note-grad1;
+                }
             }
             .title-bottom {
                 margin-top: 50px;

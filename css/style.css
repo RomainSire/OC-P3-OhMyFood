@@ -638,9 +638,6 @@ main {
   font-size: 3.4rem;
   font-weight: 400;
 }
-.menu__carte h4 {
-  margin: 0;
-}
 .menu__carte .course {
   position: relative;
   margin: 75px 0 0 0;
@@ -662,12 +659,26 @@ main {
 .menu__carte .course__separator--after {
   transform: rotate(180deg);
 }
-.menu__carte .course .underline {
+.menu__carte .course h4 {
+  margin: 0;
+  position: relative;
+}
+.menu__carte .course h4::after {
+  content: "";
   position: absolute;
-  bottom: -10px;
-  right: 0;
-  left: 0;
-  border-bottom: 2px solid black;
+  bottom: -0.2em;
+  right: -0.5em;
+  left: -0.5em;
+  height: 2px;
+  border-radius: 2px;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: opacity 400ms, transform 600ms;
+}
+.menu__carte .course:hover > h4::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 .menu__carte table {
   width: 100%;
@@ -700,6 +711,10 @@ main {
 }
 .menu__carte--note .course__separator {
   background: center/contain no-repeat url(../img/sep-note.svg);
+}
+.menu__carte--note .course h4::after {
+  background: #f78f6a;
+  box-shadow: 0 0 5px #f04a5e;
 }
 .menu__carte--note .title-bottom {
   margin-top: 50px;
