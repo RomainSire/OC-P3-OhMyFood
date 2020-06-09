@@ -640,7 +640,7 @@ main {
 }
 .menu__carte .course {
   position: relative;
-  margin: 75px 0 0 0;
+  margin: 75px 0 15px 0;
   text-align: center;
   font-size: 1.7rem;
   display: flex;
@@ -666,7 +666,7 @@ main {
 .menu__carte .course h4::after {
   content: "";
   position: absolute;
-  bottom: -0.2em;
+  bottom: -0.3em;
   right: -0.5em;
   left: -0.5em;
   height: 2px;
@@ -725,6 +725,63 @@ main {
 }
 .menu__carte--note .title-bottom .fas {
   font-size: 1em;
+}
+.menu__carte--chic {
+  background: #fff5fe;
+  font-family: "PT Serif", serif;
+}
+.menu__carte--chic h3 {
+  font-family: "Croissant One", cursive;
+  font-size: 2.2rem;
+  background: linear-gradient(0.25turn, #c77412, #905bfd);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__carte--chic .course {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.menu__carte--chic table {
+  font-size: 1.1rem;
+}
+.menu__carte--chic .course__separator--1 {
+  background: center/contain no-repeat url(../img/sep-chic-1.svg);
+}
+.menu__carte--chic .course:nth-of-type(1) h4 {
+  color: #c67412;
+}
+.menu__carte--chic .course:nth-of-type(1) h4::after {
+  background: #c67412;
+  box-shadow: 0 0 5px #c67412;
+}
+.menu__carte--chic table:nth-of-type(1) {
+  color: #c67412;
+}
+.menu__carte--chic .course__separator--2 {
+  background: center/contain no-repeat url(../img/sep-chic-2.svg);
+}
+.menu__carte--chic .course:nth-of-type(2) h4 {
+  color: #a56799;
+}
+.menu__carte--chic .course:nth-of-type(2) h4::after {
+  background: #a56799;
+  box-shadow: 0 0 5px #a56799;
+}
+.menu__carte--chic table:nth-of-type(2) {
+  color: #a56799;
+}
+.menu__carte--chic .course__separator--3 {
+  background: center/contain no-repeat url(../img/sep-chic-3.svg);
+}
+.menu__carte--chic .course:nth-of-type(3) h4 {
+  color: #6e4ccc;
+}
+.menu__carte--chic .course:nth-of-type(3) h4::after {
+  background: #6e4ccc;
+  box-shadow: 0 0 5px #6e4ccc;
+}
+.menu__carte--chic table:nth-of-type(3) {
+  color: #6e4ccc;
 }
 
 .legal {

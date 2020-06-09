@@ -28,7 +28,7 @@
         // Titre : entrée/plat/dessert
         .course { 
             position: relative;
-            margin: 75px 0 0 0;
+            margin: 75px 0 15px 0;
             text-align: center;
             font-size: 1.7rem;
             &:first-of-type {
@@ -54,7 +54,7 @@
                 &::after {
                     content: "";
                     position: absolute;
-                    bottom: -0.2em;
+                    bottom: -0.3em;
                     right: -0.5em;
                     left: -0.5em;
                     height: 2px;
@@ -117,6 +117,45 @@
                     font-size: 1em;
                 }
             }
+        }
+        &--chic {
+            background: $color-chic-bg;
+            font-family: 'PT Serif', serif;
+            h3 {
+                font-family: 'Croissant One', cursive;
+                font-size: 2.2rem;
+                @include textGradient(0.25turn, $color-chic-grad1, $color-chic-grad2);
+            }
+            .course {
+                font-size: 1.3rem;
+                font-weight: 700;
+                
+            }
+            table {
+                font-size: 1.1rem;
+            }
+            // Variations de couleurs entre les entrées/plat/desserts
+            @for $i from 1 through 3 {
+                .course {
+                    &__separator--#{$i} {
+                        background: center / contain no-repeat url(../img/sep-chic-#{$i}.svg);
+                    }
+                }
+                .course:nth-of-type(#{$i}) {
+                    h4 {
+                        color: nth($colorSet-chic, $i);
+                    }
+                    h4::after {
+                        background: nth($colorSet-chic, $i);
+                        box-shadow: 0 0 5px nth($colorSet-chic, $i);
+                    }
+                }
+                table:nth-of-type(#{$i}) {
+                    color: nth($colorSet-chic, $i);
+                }
+                
+            }
+            
         }
     }
 }
