@@ -70,7 +70,7 @@
                 transform: scaleX(1);
             }
         }
-
+        // Corps du menu
         table {
             width: 100%;
             font-size: 1.2rem;
@@ -80,7 +80,6 @@
             &:nth-child(2) {
                 text-align: right;
                 padding-left: 20px;
-                font-weight: bold;
                 font-size: 1.1em;
             }
         }
@@ -153,6 +152,49 @@
                 table:nth-of-type(#{$i}) {
                     color: nth($colorSet-chic, $i);
                 }
+                
+            }
+            
+        }
+        &--delice {
+            background: $color-delice-bg;
+            font-family: 'Nanum Pen Script', cursive;
+            font-style: italic;
+            color: black;
+            h3 {
+                font-family: 'Dancing Script', cursive;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 4rem;
+                @include textGradient(0.25turn, $color-delice-grad1, $color-delice-grad2);
+            }
+            .course {
+                font-size: 1.7rem;
+                &__separator--after {
+                    transform: scaleX(-1);
+                } 
+            }
+            table {
+                font-size: 1.5rem;
+            }
+            td {
+                padding-top: 0.3em;
+            }
+            // Variations de couleurs entre les entrées/plat/desserts
+            @for $i from 1 through 3 {
+                .course {
+                    &__separator--#{$i} {
+                        background: center / contain no-repeat url(../img/sep-delice-#{$i}.svg);
+                    }
+                }
+                .course:nth-of-type(#{$i}) {
+                    
+                    h4::after {
+                        background: nth($colorSet-delice, $i);
+                        box-shadow: 0 0 5px nth($colorSet-delice, $i);
+                    }
+                }
+                
                 
             }
             

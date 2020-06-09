@@ -690,7 +690,6 @@ main {
 .menu__carte td:nth-child(2) {
   text-align: right;
   padding-left: 20px;
-  font-weight: bold;
   font-size: 1.1em;
 }
 .menu__carte--note {
@@ -782,6 +781,54 @@ main {
 }
 .menu__carte--chic table:nth-of-type(3) {
   color: #6e4ccc;
+}
+.menu__carte--delice {
+  background: #f9f9f9;
+  font-family: "Nanum Pen Script", cursive;
+  font-style: italic;
+  color: black;
+}
+.menu__carte--delice h3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4rem;
+  background: linear-gradient(0.25turn, #0431df, #0887fb);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__carte--delice .course {
+  font-size: 1.7rem;
+}
+.menu__carte--delice .course__separator--after {
+  transform: scaleX(-1);
+}
+.menu__carte--delice table {
+  font-size: 1.5rem;
+}
+.menu__carte--delice td {
+  padding-top: 0.3em;
+}
+.menu__carte--delice .course__separator--1 {
+  background: center/contain no-repeat url(../img/sep-delice-1.svg);
+}
+.menu__carte--delice .course:nth-of-type(1) h4::after {
+  background: #0228dd;
+  box-shadow: 0 0 5px #0228dd;
+}
+.menu__carte--delice .course__separator--2 {
+  background: center/contain no-repeat url(../img/sep-delice-2.svg);
+}
+.menu__carte--delice .course:nth-of-type(2) h4::after {
+  background: #0670f3;
+  box-shadow: 0 0 5px #0670f3;
+}
+.menu__carte--delice .course__separator--3 {
+  background: center/contain no-repeat url(../img/sep-delice-3.svg);
+}
+.menu__carte--delice .course:nth-of-type(3) h4::after {
+  background: #229df9;
+  box-shadow: 0 0 5px #229df9;
 }
 
 .legal {
