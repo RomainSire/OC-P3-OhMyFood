@@ -830,6 +830,29 @@ main {
   background: #229df9;
   box-shadow: 0 0 5px #229df9;
 }
+.menu__carte--palette {
+  background: #fdfffd;
+  color: black;
+  font-family: "Itim", cursive;
+  font-style: italic;
+}
+.menu__carte--palette h3 {
+  font-family: "Kaushan Script", cursive;
+  font-style: normal;
+  background: linear-gradient(0.25turn, #3d9339, #bfff7e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__carte--palette .course__separator {
+  background: center/contain no-repeat url(../img/sep-palette.svg);
+}
+.menu__carte--palette .course h4 {
+  font-size: 1.3rem;
+}
+.menu__carte--palette .course h4::after {
+  background: #72bf56;
+  box-shadow: 0 0 5px #72bf56;
+}
 
 .legal {
   padding: 0 5%;

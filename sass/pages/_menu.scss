@@ -194,10 +194,30 @@
                         box-shadow: 0 0 5px nth($colorSet-delice, $i);
                     }
                 }
-                
-                
             }
-            
+        }
+        &--palette {
+            background: $color-palette-bg;
+            color: black;
+            font-family: 'Itim', cursive;
+            font-style: italic;
+            h3 {
+                font-family: 'Kaushan Script', cursive;
+                font-style: normal;
+                @include textGradient(0.25turn, $color-palette-grad1, $color-palette-grad2);
+            }
+            .course {
+                &__separator {
+                    background: center / contain no-repeat url(../img/sep-palette.svg);
+                }
+                h4 {
+                    font-size: 1.3rem;
+                }
+                h4::after {
+                    background: $color-palette-txt;
+                    box-shadow: 0 0 5px $color-palette-txt;
+                }
+            }
         }
     }
 }
