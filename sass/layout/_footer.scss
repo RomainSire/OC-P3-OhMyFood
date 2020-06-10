@@ -4,9 +4,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0.5em 0;
+    padding: 0.5rem 0;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     @include headerStyle;
 
     &__list {
@@ -15,6 +15,8 @@
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
+            padding: 0.6rem 0;
+            font-size: 1.8rem;
         }
 
         li {
