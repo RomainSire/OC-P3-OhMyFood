@@ -13,9 +13,11 @@
  * $color2 : 2eme couleur du gradient
  */
 @mixin textGradient($direction: 0, $color1: $color-bg, $color2: $color-txt) {
-    background: linear-gradient($direction, $color1, $color2);
-    background-clip: text;
+    background-image: linear-gradient($direction, $color1, $color2);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 

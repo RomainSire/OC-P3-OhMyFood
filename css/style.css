@@ -497,9 +497,11 @@ main {
 }
 .menu-list__card--note .fas {
   font-size: 1.5em;
-  background: linear-gradient(0.25turn, #f04a5e, #f78f6a);
-  background-clip: text;
+  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .menu-list__card--note h2 {
   font-family: "Devonshire", cursive;
@@ -516,9 +518,11 @@ main {
 .menu-list__card--chic h2 {
   font-family: "Croissant One", cursive;
   font-size: 1.4em;
-  background: linear-gradient(0.25turn, #c77412, #905bfd);
-  background-clip: text;
+  background-image: linear-gradient(0.25turn, #c77412, #905bfd);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .menu-list__card--chic p {
   font-family: "DM Serif Text", serif;
@@ -530,9 +534,11 @@ main {
 .menu-list__card--delice h2 {
   font-family: "Dancing Script", cursive;
   font-size: 2.2em;
-  background: linear-gradient(0.25turn, #0431df, #0887fb);
-  background-clip: text;
+  background-image: linear-gradient(0.25turn, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .menu-list__card--delice p {
   font-family: "Nanum Pen Script", cursive;
@@ -545,9 +551,11 @@ main {
 .menu-list__card--palette h2 {
   font-family: "Kaushan Script", cursive;
   font-size: 2.2em;
-  background: linear-gradient(0.25turn, #3d9339, #bfff7e);
-  background-clip: text;
+  background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .menu-list__card--palette p {
   font-family: "Nanum Pen Script", cursive;
@@ -709,9 +717,11 @@ main {
 }
 .menu__carte--note .fas {
   font-size: 1.5em;
-  background: linear-gradient(0.25turn, #f04a5e, #f78f6a);
-  background-clip: text;
+  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .menu__carte--note h3 {
   font-family: "Devonshire", cursive;
@@ -741,9 +751,11 @@ main {
 .menu__carte--chic h3 {
   font-family: "Croissant One", cursive;
   font-size: 2.2rem;
-  background: linear-gradient(0.25turn, #c77412, #905bfd);
-  background-clip: text;
+  background-image: linear-gradient(0.25turn, #c77412, #905bfd);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .menu__carte--chic .course {
   font-size: 1.3rem;
@@ -802,9 +814,11 @@ main {
   font-weight: 600;
   font-style: normal;
   font-size: 4rem;
-  background: linear-gradient(0.25turn, #0431df, #0887fb);
-  background-clip: text;
+  background-image: linear-gradient(0.25turn, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .menu__carte--delice .course {
   font-size: 1.7rem;
@@ -848,9 +862,11 @@ main {
 .menu__carte--palette h3 {
   font-family: "Kaushan Script", cursive;
   font-style: normal;
-  background: linear-gradient(0.25turn, #3d9339, #bfff7e);
-  background-clip: text;
+  background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .menu__carte--palette .course__separator {
   background: center/contain no-repeat url(../img/sep-palette.svg);
