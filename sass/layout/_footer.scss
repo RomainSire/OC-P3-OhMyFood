@@ -19,7 +19,8 @@
             font-size: 1.4rem;
         }
 
-        li {
+        a {
+            display: block;
             padding: 0.3em 1.2em;
             &:hover {
                 animation: shake 500ms infinite;
