@@ -11,5 +11,8 @@ ul {
     padding: 0;
 }
 main {
-    margin: 11rem 3% 10rem 3%;
+    margin: 5rem 3% 7.5rem 3%;
+    @include desktop-only {
+        margin: 8rem 3% 7.5rem 3%;
+    }
 }
